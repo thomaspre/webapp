@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    provider = str(os.environ.get('PROVIDER', 'you !'))
+    provider = str(os.environ.get('PROVIDER', 'you'))
     return 'Hello '+provider+'!'
 
 if __name__ == '__main__':
